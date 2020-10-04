@@ -1,4 +1,4 @@
-# Binary Trees❗❗
+# Binary Trees ❗❗
 
 - ### Hacktober Fest 🔥🔥
     We hereby welcome coders who wish to contribute to Open Source and participate in  Hacktober Fest 2020.  
