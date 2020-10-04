@@ -68,7 +68,7 @@ if __name__ == '__main__':
 	for key in keys:
 		root = insert(root, key)
 
-	k = 2
+	k = int(input())
 	res = findKthSmallest(root, k)
 
 	if res != float('inf'):
