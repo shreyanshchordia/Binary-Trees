@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
+//Algorithm to find the common ancestor of 2 given nodes without using inorder traversal
 struct Node
 {
     int data;
@@ -17,25 +17,33 @@ struct Node* create(int n)
 
  return temp;
 }
-struct Node* lca(struct Node* root,struct Node* p,struct Node* q)
+struct Node* lca(struct Node* root,struct Node* p,struct Node* q)//root, 1st node and 2nd node
 {
+    //logic behind the code----
+    //we will try to find the given nodes in the tree
+    //let now we find one of the 2 nodes we will send the data in the node to it's parent 
+    //and if we don't find any node we will send Null to the parent node
+    //parent will contain 2 data at the same time
+    //1 - if both data re null then the parent will save null
+    //2 - if one of the data is null and other one is a given node ,the data of the given node is saved
+    //3- if both of them are data of given nodes then we have found the ancesstor
      if(root==NULL)
      {
          return NULL;
      }
-     else if(root==p||root==q)
+     else if(root==p||root==q)//here we are comparing nodes with all the nodes in the tree
      {
          return root;
      }
      struct Node* l = lca(root->left,p,q);
      struct Node* r = lca(root->right,p,q);
-     if(l!=NULL&&r!=NULL)
+     if(l!=NULL&&r!=NULL)//checks condition for above mentioned conditioned 
      {
-         return root;
+         return root;// this root is the ancestor
      }
      else
      {
-         return (l!=NULL?l:r);
+         return (l!=NULL?l:r);// it excutes (2)  
      }
 }
 int main()
