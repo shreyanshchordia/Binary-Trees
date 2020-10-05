@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-//sum of all child nodes is equal to parent node
+//A TREE is called sum tree if sum of all the child nodes is equal to the parent node
+//(here child nodes includes directly connected child nodes and and granchild child nodes and all further nodes when we go down the tree)
 struct Node
 {
     int data;
@@ -26,20 +27,20 @@ int add(struct Node* root)
 }
 int checksumtree(struct Node* root)
 {
-    if(root==NULL)
+    if(root==NULL)// if root is null then the tree is considered sum tree
     {
         return 1;
     }
-    if(root->left==NULL&&root->right==NULL)
+    if(root->left==NULL&&root->right==NULL)//leaf nodes are excluded here
     {
         return 1;
     }
-    int l = add(root->left);
-    int r = add(root->right);
+    int l = add(root->left);//here all the left child nodes are added
+    int r = add(root->right);//here all the right child nodes are added
     int t = l+r;
-    if(root->data==t)
+    if(root->data==t)//here the sum of all left and right child nodes is compared with the parent node
     {
-        if(checksumtree(root->left)&&checksumtree(root->right))
+        if(checksumtree(root->left)&&checksumtree(root->right))//if the previous codition satisfies we go for individually checking the chils nodes for sum tree
         {
             return 1;
         }
