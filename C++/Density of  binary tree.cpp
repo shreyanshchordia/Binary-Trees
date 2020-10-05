@@ -2,6 +2,7 @@
 using namespace std;
 
 //Author : Swoyam S Sahoo
+// Density of a binay tree means the ratio of size of binary tree to height of binary tree
 struct Node
 {
     int data;
@@ -23,7 +24,7 @@ float heightofb(struct Node *root)
     {
         return 0;
     }
-    return max(heightofb(root->left), heightofb(root->right)) + 1;
+    return max(heightofb(root->left), heightofb(root->right)) + 1;//  1 is added to represent the root node
 }
 float sizeofb(struct Node *root)
 {
@@ -33,7 +34,7 @@ float sizeofb(struct Node *root)
     }
     int left = sizeofb(root->left);
     int right = sizeofb(root->right);
-    return left + right + 1;
+    return left + right + 1; // ti gives the overall size of binary tree
 }
 int main()
 {
@@ -47,4 +48,3 @@ int main()
     cout << density;
     return 0;
 }
-//density = size of binary tree/height of binary tree
