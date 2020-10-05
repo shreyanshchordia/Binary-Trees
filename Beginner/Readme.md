@@ -74,9 +74,9 @@
 [<img align="right" width="150" src="assets/discord.png">](https://discord.gg/hacktoberfest)
 # First Contributions (Beginner)
 
-    <img align="right" width="300" src="assets/fork.png" alt="fork this repository" />
+ <img align="right" width="300" src="assets/fork.png" alt="fork this repository" />
 
-    If you don't have git on your machine, [install it]( https://help.github.com/articles/set-up-git/).
+ If you don't have git on your machine, [install it]( https://help.github.com/articles/set-up-git/).
     
 ## Fork this repository
 
