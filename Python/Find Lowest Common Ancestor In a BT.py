@@ -1,3 +1,9 @@
+# Given values of two values n1 and n2 in a Binary Search Tree, find the Lowest Common Ancestor (LCA).
+# You may assume that both the values exist in the tree.
+
+# The lowest common ancestor between two nodes n1 and n2 is defined as the lowest shared node in T
+# that has both n1 and n2 as descendants
+# (where we allow a node to be a descendant of itself).
 class Node:
     # initializing attributes of class using constructor, to create new node
     # __init__ is a reserved method
