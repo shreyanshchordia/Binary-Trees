@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
+//we are given a value k and we need to find and print all the nodes with k leaf nodes
+//(leaf nodes are the nodes which no child nodes)
 struct Node
 {
     int data;
@@ -19,19 +20,19 @@ struct Node* create(int n)
 }
 int leaves(struct Node* root,int k)
 {
-    if(root==NULL)
+    if(root==NULL)//if the node is null we will return back to it's parent
     {
         return 0;
     }
-    else if(root->left==NULL&&root->right==NULL)
+    else if(root->left==NULL&&root->right==NULL)//this is the condition for leaf node
     {
         return 1;
     }
 
-    int lc = leaves(root->left,k);
-    int rc = leaves(root->right,k);
+    int lc = leaves(root->left,k);//counts the leaf nodes in left child
+    int rc = leaves(root->right,k);//count he leaf nodes in right child
     int tc = lc+rc;
-    if(tc==k)
+    if(tc==k)//compares the total leaf nodes with given k
     {
         cout<<root->data<<" ";
     }
