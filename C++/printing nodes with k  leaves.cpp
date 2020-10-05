@@ -30,7 +30,7 @@ int leaves(struct Node* root,int k)
     }
 
     int lc = leaves(root->left,k);//counts the leaf nodes in left child
-    int rc = leaves(root->right,k);//count he leaf nodes in right child
+    int rc = leaves(root->right,k);//count the leaf nodes in right child
     int tc = lc+rc;
     if(tc==k)//compares the total leaf nodes with given k
     {
