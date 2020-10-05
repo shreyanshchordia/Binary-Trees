@@ -5,27 +5,31 @@
 </p>
 
 <h1 align="center">Hacktoberfest</h1> 
-    We hereby welcome coders who wish to contribute to Open Source and participate in  Hacktober Fest 2020.  
+
+
+- ###    We hereby welcome coders who wish to contribute to Open Source and participate in  Hacktober Fest 2020.  
     We are looking for <b>Quality</b> and <b>not Quantity</b> 
 
 
 
-BBBBBBBBBBBBBBBBB   IIIIIIIIIINNNNNNNN        NNNNNNNN               AAA               RRRRRRRRRRRRRRRRR   YYYYYYY       YYYYYYY
-B::::::::::::::::B  I::::::::IN:::::::N       N::::::N              A:::A              R::::::::::::::::R  Y:::::Y       Y:::::Y
-B::::::BBBBBB:::::B I::::::::IN::::::::N      N::::::N             A:::::A             R::::::RRRRRR:::::R Y:::::Y       Y:::::Y
-BB:::::B     B:::::BII::::::IIN:::::::::N     N::::::N            A:::::::A            RR:::::R     R:::::RY::::::Y     Y::::::Y
-  B::::B     B:::::B  I::::I  N::::::::::N    N::::::N           A:::::::::A             R::::R     R:::::RYYY:::::Y   Y:::::YYY
-  B::::B     B:::::B  I::::I  N:::::::::::N   N::::::N          A:::::A:::::A            R::::R     R:::::R   Y:::::Y Y:::::Y
-  B::::BBBBBB:::::B   I::::I  N:::::::N::::N  N::::::N         A:::::A A:::::A           R::::RRRRRR:::::R     Y:::::Y:::::Y 
-  B:::::::::::::BB    I::::I  N::::::N N::::N N::::::N        A:::::A   A:::::A          R:::::::::::::RR       Y:::::::::Y
-  B::::BBBBBB:::::B   I::::I  N::::::N  N::::N:::::::N       A:::::A     A:::::A         R::::RRRRRR:::::R       Y:::::::Y 
-  B::::B     B:::::B  I::::I  N::::::N   N:::::::::::N      A:::::AAAAAAAAA:::::A        R::::R     R:::::R       Y:::::Y
-  B::::B     B:::::B  I::::I  N::::::N    N::::::::::N     A:::::::::::::::::::::A       R::::R     R:::::R       Y:::::Y
-  B::::B     B:::::B  I::::I  N::::::N     N:::::::::N    A:::::AAAAAAAAAAAAA:::::A      R::::R     R:::::R       Y:::::Y 
-BB:::::BBBBBB::::::BII::::::IIN::::::N      N::::::::N   A:::::A             A:::::A   RR:::::R     R:::::R       Y:::::Y
-B:::::::::::::::::B I::::::::IN::::::N       N:::::::N  A:::::A               A:::::A  R::::::R     R:::::R    YYYY:::::YYYY 
-B::::::::::::::::B  I::::::::IN::::::N        N::::::N A:::::A                 A:::::A R::::::R     R:::::R    Y:::::::::::Y
-BBBBBBBBBBBBBBBBB   IIIIIIIIIINNNNNNNN         NNNNNNNAAAAAAA                   AAAAAAARRRRRRRR     RRRRRRR    YYYYYYYYYYYYY
+
+
+         BBBBBBBBBBBBBBBBB   IIIIIIIIIINNNNNNNN        NNNNNNNN               AAA               RRRRRRRRRRRRRRRRR   YYYYYYY       YYYYYYY
+         B::::::::::::::::B  I::::::::IN:::::::N       N::::::N              A:::A              R::::::::::::::::R  Y:::::Y       Y:::::Y
+         B::::::BBBBBB:::::B I::::::::IN::::::::N      N::::::N             A:::::A             R::::::RRRRRR:::::R Y:::::Y       Y:::::Y
+         BB:::::B     B:::::BII::::::IIN:::::::::N     N::::::N            A:::::::A            RR:::::R     R:::::RY::::::Y     Y::::::Y
+           B::::B     B:::::B  I::::I  N::::::::::N    N::::::N           A:::::::::A             R::::R     R:::::RYYY:::::Y   Y:::::YYY
+           B::::B     B:::::B  I::::I  N:::::::::::N   N::::::N          A:::::A:::::A            R::::R     R:::::R   Y:::::Y Y:::::Y
+           B::::BBBBBB:::::B   I::::I  N:::::::N::::N  N::::::N         A:::::A A:::::A           R::::RRRRRR:::::R     Y:::::Y:::::Y 
+           B:::::::::::::BB    I::::I  N::::::N N::::N N::::::N        A:::::A   A:::::A          R:::::::::::::RR       Y:::::::::Y
+           B::::BBBBBB:::::B   I::::I  N::::::N  N::::N:::::::N       A:::::A     A:::::A         R::::RRRRRR:::::R       Y:::::::Y 
+           B::::B     B:::::B  I::::I  N::::::N   N:::::::::::N      A:::::AAAAAAAAA:::::A        R::::R     R:::::R       Y:::::Y
+           B::::B     B:::::B  I::::I  N::::::N    N::::::::::N     A:::::::::::::::::::::A       R::::R     R:::::R       Y:::::Y
+           B::::B     B:::::B  I::::I  N::::::N     N:::::::::N    A:::::AAAAAAAAAAAAA:::::A      R::::R     R:::::R       Y:::::Y 
+         BB:::::BBBBBB::::::BII::::::IIN::::::N      N::::::::N   A:::::A             A:::::A   RR:::::R     R:::::R       Y:::::Y
+         B:::::::::::::::::B I::::::::IN::::::N       N:::::::N  A:::::A               A:::::A  R::::::R     R:::::R    YYYY:::::YYYY 
+         B::::::::::::::::B  I::::::::IN::::::N        N::::::N A:::::A                 A:::::A R::::::R     R:::::R    Y:::::::::::Y
+         BBBBBBBBBBBBBBBBB   IIIIIIIIIINNNNNNNN         NNNNNNNAAAAAAA                   AAAAAAARRRRRRRR     RRRRRRR    YYYYYYYYYYYYY
 
                 TTTTTTTTTTTTTTTTTTTTTTTRRRRRRRRRRRRRRRRR   EEEEEEEEEEEEEEEEEEEEEE EEEEEEEEEEEEEEEEEEEEEE
                 T:::::::::::::::::::::TR::::::::::::::::R  E::::::::::::::::::::E E::::::::::::::::::::E
@@ -69,13 +73,6 @@ BBBBBBBBBBBBBBBBB   IIIIIIIIIINNNNNNNN         NNNNNNNAAAAAAA                   
     
 [<img align="right" width="150" src="assets/discord.png">](https://discord.gg/hacktoberfest)
 # First Contributions (Beginner)
-
-    How can we be locked down when we have an infinite things to learn? We will make our first imprint in "Build From Home" module by coping up with github.
-
-    Github is one of the primary tool that we use while working as a team and making collabrations.
-    We wanted to make all of our budding developers learn & contribute for the first time.
-
-    Reading articles & watching tutorials can help, but what's better than actually doing the stuff in a practice environment? This tutorial aims at providing    guidance & simplifying the way beginners make their first contribution. If you are looking to make your first contribution, follow the steps below.
 
     <img align="right" width="300" src="assets/fork.png" alt="fork this repository" />
 
