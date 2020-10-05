@@ -3,6 +3,18 @@
 using namespace std;
 
 //Author : Swoyam S Sahoo
+//left and right view of a binary tree 
+//example - let our tree be       1
+ //                            /     \
+//                            2        3
+//                          /   \    /   \
+//                         4    5   6     7
+//                                    \
+//                                     8           
+//let we are moving by vertical order traversal
+// in this cast the output should be     -     
+//   left view ---- 1 2 4 8
+//    right view ----- 1 3 7 8
 struct Node
 {
     int data;
@@ -20,9 +32,9 @@ struct Node *newnode(int x)
 void printleftrightview(struct Node *root)
 {
     int k, i;
-    map<int, list<struct Node *>> mp;
-    queue<struct Node *> q1;
-    queue<int> q2;
+    map<int, list<struct Node *>> mp;//for storing nodes with corresponding number from q2
+    queue<struct Node *> q1; // for temporarily storing nodes
+    queue<int> q2;//for giving corresponding number to the nodes in q1
     q1.push(root);
     q2.push(0);
     while (!q1.empty())
@@ -46,13 +58,13 @@ void printleftrightview(struct Node *root)
     cout << "the right view of the tree is\n";
     for (auto i : mp)
     {
-        cout << i.second.front()->data << " ";
+        cout << i.second.front()->data << " ";//front in this case gives us the right view
     }
     cout << endl;
     cout << "the left view of the tree is\n";
     for (auto i : mp)
     {
-        cout << i.second.back()->data << " ";
+        cout << i.second.back()->data << " ";//back in this case gives us the left view
     }
 }
 int main()
