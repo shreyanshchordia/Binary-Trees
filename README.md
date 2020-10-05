@@ -12,7 +12,10 @@
         3. <a href = "https://leetcode.com/">LeetCode</a>  
         4. <a href = "https://www.hackerearth.com/challenges/">HackerEarth</a>  
         5. <a href = "https://www.hackerrank.com/">HackerRank</a>  
-    
+
+- ### Beginners
+    This repository especially focuses on helping beginners through the Hacktober Fest🔥🔥.   
+    If you are an absolute beginner and want to contribute then check out [CONTRIBUTING.md](CONTRIBUTING.md)
 - ### Guidelines for Contribution
     1. **Fork** the Repository
     2. **Add, edit or enhance** code in whichever Language you want
