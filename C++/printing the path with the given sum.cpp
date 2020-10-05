@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
-
+//we are given a number we need to find and print the continous set of nodes in the tree whose sum will be same as the given number 
 using namespace std;
-int s = 0;
-stack<struct Node*> st;
+int s = 0;//for storing the sum of the nodes we visit
+stack<struct Node*> st;// for temporarily storing the nodes we visit
 struct Node
 {
     int data;
@@ -20,15 +20,15 @@ struct Node* create(int n)
 }
 int sum(struct Node* root,int k)
 {
-    if(root==NULL)
+    if(root==NULL)//if the root node is null either we exit or return to parent node
     {
         return 0;
     }
-    s+=root->data;
-    st.push(root);
-    if(s==k)
+    s+=root->data;//adding the data of the node we cross
+    st.push(root);//storing the node whose data is added in previous step
+    if(s==k)//compares the given number and sum
     {
-        while(!st.empty())
+        while(!st.empty())//if previous condition satisfies we print the stack and empty it
         {
             struct Node* temp = st.top();
             st.pop();
@@ -36,10 +36,10 @@ int sum(struct Node* root,int k)
         }
         cout<<endl;
     }
-    sum(root->left,k);
-    sum(root->right,k);
-    s-=root->data;
-    st.pop();
+    sum(root->left,k);//for recursively traversing to left child nodes
+    sum(root->right,k);//for recursively traversing to right child nodes
+    s-=root->data;//once we add the data of left and right child nodes we need to return from the node , so the data is subtracted from the computed sum
+    st.pop();//the node whose data is subtracted in previous step is removed from stack
     return 0;
 }
 int main()
@@ -59,6 +59,7 @@ int main()
     root->right->right = create(7);
     root->right->right->right = create(12);
     int k;
+    cout<<"enter the sum\n";
     cin>>k;
     sum(root,k);
 
