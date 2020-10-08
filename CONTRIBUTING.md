@@ -158,5 +158,5 @@ We will be analysing your details,
 Once your pull request is accepted, you will be receiving a mail.
 
 Stay Safe....
-        
+Stay Healthy....
 
