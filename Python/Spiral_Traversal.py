@@ -1,5 +1,28 @@
 # Python3 program for Clockwise Spiral Traversal of Binary Tree 
+'''
+ A spiral traversal of a binary tree considers the nodes of the tree as points 
+ on the circular boundary of a spiral starting from the head to the spiral centre
 
+ example: consider the following tree
+          10  
+        /    \  
+       12     13  
+            /    \  
+           14     15  
+          /  \   /  \  
+        21   22 23   24  
+ The traversal will go as shown below
+         "10"----------->---------  
+        /    \                    |
+ -->--"12"->-"13"---->----        |
+|           /    \        |       |
+|        "14"--<-"15"--<--        |
+|         /  \   /  \             |
+ ----<--"21" "22""23" "24"----<---
+
+ Following the above spiral
+ The traversal would result into: 10 24 23 22 21 12 13 15 14
+'''
 # Making sufficiently large initializations
 INT_MAX = 2**31
 INT_MIN = -2**31
