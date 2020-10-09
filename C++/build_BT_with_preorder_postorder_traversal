@@ -1,0 +1,26 @@
+//Given preorder and postorder traversal of a tree, construct the binary tree.
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ };
+ 
+    TreeNode* constructFromPrePost(vector<int>& pre, vector<int>& post) {
+        return helper(pre, 0, pre.size()-1, post, 0, post.size()-1);
+    }
+    TreeNode* helper(vector<int>& pre, int pre_start, int pre_end, vector<int>& post, int post_start, int post_end){
+        if(pre_start > pre_end || post_start > post_end){
+            return nullptr;
+        }
+        TreeNode* root = new TreeNode(post[post_end]);
+        if(post_end == post_start) return root;
+        int index = post_start;
+        while(post[index] != pre[pre_start+1]){
+            index++;
+        }
+        root->left = helper(pre,pre_start+1,pre_start+1+ (index-post_start), post, post_start, index);
+        root->right = helper(pre, pre_end-(post_end-1-index-1), pre_end, post, index+1, post_end-1);
+        return root;
+    }
