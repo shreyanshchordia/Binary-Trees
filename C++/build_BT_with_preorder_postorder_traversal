@@ -1,3 +1,5 @@
+//Given preorder and postorder traversal of a tree, construct the binary tree.
+
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -22,4 +24,3 @@ struct TreeNode {
         root->right = helper(pre, pre_end-(post_end-1-index-1), pre_end, post, index+1, post_end-1);
         return root;
     }
-};
