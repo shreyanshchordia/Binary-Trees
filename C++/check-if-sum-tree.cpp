@@ -6,7 +6,7 @@
   as root */
 int sum(TreeNode* root)
 {
-   if(root == NULL)
+   if(root == nullptr)
      return 0;
    return sum(root->left) + root->data + sum(root->right);
 }
@@ -22,8 +22,8 @@ int issumtree(TreeNode* root)
 
     /* If root is null or it's a leaf node then
        return true */
-    if(node == nullptr ||
-            (node->left == null && node->right == null))
+    if(root == nullptr ||
+            (root->left == nullptr && root->right == nullptr))
         return 1;
 
    /* Get sum of nodes in left and right subtrees */
@@ -33,8 +33,8 @@ int issumtree(TreeNode* root)
    /* if the node and both of its children satisfy the
        property return 1 else 0*/
     if((root->data == ls + rs)&&
-            issumtree(node->left) &&
-            issumtree(node->right))
+            issumtree(root->left) &&
+            issumtree(root->right))
         return 1;
 
    return 0;
