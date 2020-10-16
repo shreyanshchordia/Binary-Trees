@@ -50,18 +50,18 @@ void ShowSmall(Node* root, int k)
 	if (res == NULL) 
 		cout << "There are less than k nodes in the BST"; 
 	else
-		cout << "K-th Smallest Element is " << res->data; 
+		cout << "K-th Smallest Element is " << res->data;  // 2nd smallest number in BST is 21
 } 
 
 int main() 
 { 
 	Node* root = NULL; 
-	int keys[] = { 88,21,15,32,72,50 }; 
+	int keys[] = { 88,21,15,32,72,50 }; //Inorder or Ascending Order : 15,21,32,50,72,80
 
 	for (int x : keys) 
 		root = insert(root, x); 
 
-	int k = 2; 
-	ShowSmall(root, k); 
+	int k = 2;  // k=2, So 2nd smallest number in the BST
+	ShowSmall(root, k);  //If k=2, OP should be 21
 	return 0; 
 }
