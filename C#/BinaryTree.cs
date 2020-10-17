@@ -74,6 +74,25 @@ namespace BTree
             DisplayTree(_root);
         }
 
+        
+        /// <summary>
+        /// Returns minimum depth of Binary Tree.
+        /// </summary>
+        /// <returns>Returns the minimum depth of the Binary tree from the root</returns>
+        public int FindMinimumDepthOfBinarySearchTree(Node node, int level)
+        {
+            if (node == null)
+            {
+                return level;
+            }
+            else
+            {
+                var left = FindMinimumDepthOfBinarySearchTree(node.left, level+1);
+                var right = FindMinimumDepthOfBinarySearchTree(node.right, level+1);
+
+                return Math.Min(left, right);
+            }
+        }
     }
 
     class Program
@@ -89,6 +108,7 @@ namespace BTree
             tree.Insert(1);
             tree.Insert(3);
             tree.DisplayTree();
+            tree.FindMinimumDepthOfBinarySearchTree(root, 0);
         }
     }
 }
