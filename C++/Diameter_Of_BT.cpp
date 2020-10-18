@@ -13,15 +13,15 @@
 
 using namespace std;
 
-class Node{
- public:
+class Node {
+public:
     int data;
     Node *left;
     Node *right;
 };
 
 //function to create new node
-Node* newNode(int data){
+Node* newNode(int data) {
     Node* newnode = new Node();
     newnode->data = data;
     newnode->left = nullptr;
@@ -29,18 +29,18 @@ Node* newNode(int data){
 }
 
 //function to compute the "Height" of the binary tree
-int height(Node* node){
-    if(node == nullptr) return 0;
+int height(Node* node) {
+    if (node == nullptr) return 0;
 
-    return 1+ max(height(node->left), height(node->right));
+    return 1 + max(height(node->left), height(node->right));
 }
 
 //Function to calculate the "Diameter" of the Binary tree
 
-int diameter(Node* node){
+int diameter(Node* node) {
 
     //Base case when tree is empty
-    if(node == nullptr) return 0;
+    if (node == nullptr) return 0;
 
     // To get the height of left and right sub-trees
     int lheight = height(node->left);
@@ -54,11 +54,11 @@ int diameter(Node* node){
     // 1) Diameter of left subtree
     // 2) Diameter of right subtree
     // 3) Height of left subtree + height of right subtree + 1
-    return max(lheight+rheight+1,max(ldiameter,rdiameter));
+    return max(lheight + rheight + 1, max(ldiameter, rdiameter));
 }
 
 //Driver Code
-int main(){
+int main() {
 
     /* Constructed binary tree is
               1
@@ -74,6 +74,6 @@ int main(){
     root->left->left = newNode(4);
     root->left->right = newNode(5);
 
-    cout<<"The diameter of the given tree is: "<<diameter(root)<<"\n";
+    cout << "The diameter of the given tree is: " << diameter(root) << "\n";
     return 0;
 }
